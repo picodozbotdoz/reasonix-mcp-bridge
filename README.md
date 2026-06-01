@@ -22,6 +22,27 @@ cd ~/.reasonix-mcp-bridge
 bash install.sh
 ```
 
+ ✅ MCP Bridge — Working 
+
+Location:  ~/.reasonix-mcp-bridge/server.js 
+
+Registered as MCP server:  reasonix-bridge  (stdio transport, takes effect next Reasonix launch)
+
+## How it works 
+
+Two Reasonix instances share state via  /tmp/reasonix-bridge/state.json . Each spawns the same MCP server process; they coordinate through the file.
+
+### Tools available 
+
+ Tool             What it does
+ ──────────────── ───────────────────────────────────────────────
+ send_message     Send a message to a peer. Returns a message_id.
+ check_inbox      Check for pending messages addressed to you.
+ reply_to_message Reply to a received message by its ID.
+ get_response     Retrieve the reply for a sent message.
+ list_peers       List all peers that have exchanged messages.
+
+
 The installer:
 1. Copies `server.js` and `package.json` to `~/.reasonix-mcp-bridge/`
 2. Runs `npm install`
