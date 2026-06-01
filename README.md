@@ -34,13 +34,13 @@ Two Reasonix instances share state via  /tmp/reasonix-bridge/state.json . Each s
 
 ### Tools available 
 
- Tool             What it does
- ──────────────── ───────────────────────────────────────────────
- send_message     Send a message to a peer. Returns a message_id.
- check_inbox      Check for pending messages addressed to you.
- reply_to_message Reply to a received message by its ID.
- get_response     Retrieve the reply for a sent message.
- list_peers       List all peers that have exchanged messages.
+| Tool            | What it does
+|-----------------|------------------------------------------------
+| send_message    | Send a message to a peer. Returns a message_id.
+| check_inbox     | Check for pending messages addressed to you.
+| reply_to_message| Reply to a received message by its ID.
+| get_response    | Retrieve the reply for a sent message.
+| list_peers      | List all peers that have exchanged messages.
 
 
 The installer:
